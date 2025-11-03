@@ -74,8 +74,8 @@
       </div>
 
       <!-- Botón añadir al carrito -->
+      <h3 id="total">Total: </h3>
       <button class="add-cart"><i class="fas fa-shopping-cart"></i> ADD TO CART</button>
-
       <p class="shipping">Ships for free the week of February 14th.</p>
 
       <!-- Iconos info -->
@@ -97,8 +97,22 @@
   <!-- REVIEWS -->
   <section class="reviews">
     <h2>Customer Reviews</h2>
+    <div id="inputReview">
+      <form action="javascript:void(0)">
+        <h3>Add your simple anonymous review</h3>
+        <label for="inputReviewTitle">Title for the review:</label>
+        <input id="inputReviewTitle" type="text">
+        <label for="inputReviewContent">Content of the review:</label>
+        <textarea id="inputReviewContent" type="text"></textarea>
+        <button onclick="addReview()">Publish Review</button>
+      </form>
+      
+    </div>
     <div id="reviews-container">
-        
+        <div class="review">
+          <h3>Great product</h3>
+          <p>I think this product is great, I think it is the best out there!</p>
+        </div>
     </div>
   </section>
 

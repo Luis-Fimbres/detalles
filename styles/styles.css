@@ -190,6 +190,7 @@ header nav a:hover {
 
 /* Botón de carrito */
 .add-cart {
+  margin-top: 10px;
   background: #4c1d95;
   color: white;
   border: none;
@@ -244,7 +245,6 @@ header nav a:hover {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 15px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
@@ -259,6 +259,61 @@ header nav a:hover {
   border: none;
   color: #7c3aed;
   cursor: pointer;
+}
+
+#reviews-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#inputReview form{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #dfdfdf;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#inputReview form > label{
+  margin-bottom: -8px;
+  font-weight: 600;
+}
+
+#inputReview form > input, #inputReview form > textarea{
+  color: #474747;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#inputReview form > textarea{
+  height: 100px;
+  resize: none;
+  width: 100%;
+}
+
+#inputReview form > button{
+  padding: 5px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
+}
+
+#inputReview form > button:hover{
+  border-color: #7c3aed;
+}
+
+#inputReview form > h3{
+  text-align: center;
 }
 
 .noDisplay{
